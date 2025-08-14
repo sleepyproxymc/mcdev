@@ -3,41 +3,70 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MCDev Help</title>
+  <title>MCDev Hub</title>
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+  <!-- Header / Navigation -->
   <header>
-    <h1>MCDev Help</h1>
+    <div class="logo">MCDev</div>
     <nav>
-      <button class="category-btn active" data-category="all">All</button>
-      <button class="category-btn" data-category="fabric">Fabric</button>
-      <button class="category-btn" data-category="forge">Forge</button>
-      <button class="category-btn" data-category="plugins">Plugins</button>
-      <button class="category-btn" data-category="general">General Fixes</button>
+      <a href="#about">About</a>
+      <a href="#features">Features</a>
+      <a href="#support">Support</a>
+      <a href="#premium">Premium</a>
     </nav>
-    <input type="text" id="search" placeholder="Search fixes...">
   </header>
-  
-  <main id="fixes-list">
-    <div class="fix-item" data-category="fabric">
-      <h2>Fabric Crash Fix</h2>
-      <p>Step-by-step guide to fix Fabric crashes in Minecraft.</p>
-    </div>
-    <div class="fix-item" data-category="forge">
-      <h2>Forge Mod Error</h2>
-      <p>How to troubleshoot common Forge mod errors.</p>
-    </div>
-    <div class="fix-item" data-category="plugins">
-      <h2>Plugin Issue</h2>
-      <p>Resolve conflicts and errors caused by server plugins.</p>
-    </div>
-    <div class="fix-item" data-category="general">
-      <h2>General Minecraft Bug</h2>
-      <p>Fix general bugs without affecting mods or plugins.</p>
-    </div>
-  </main>
 
-  <script src="script.js"></script>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>MCDev Hub</h1>
+      <p>Your go-to resource for Minecraft development, modding, and server insights. Discover tools, tips, and tutorials to enhance your Minecraft experience.</p>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="info-section">
+    <h2>About MCDev</h2>
+    <p>MCDev Hub is a platform dedicated to helping Minecraft enthusiasts, modders, and server admins stay informed and solve issues efficiently. We focus on sharing knowledge, tutorials, and professional guidance.</p>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="info-section">
+    <h2>Features</h2>
+    <div class="features-grid">
+      <div class="feature-card">
+        <h3>Guides & Tutorials</h3>
+        <p>Step-by-step guides for mods, servers, and plugins to make Minecraft development easier.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Expert Tips</h3>
+        <p>Professional advice and best practices from experienced Minecraft developers.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Support Resources</h3>
+        <p>Access support channels, documentation, and community help for your projects.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Support Section -->
+  <section id="support" class="info-section">
+    <h2>Support</h2>
+    <p>Need help? Our support section offers guidance for common questions and connects you with community resources.</p>
+  </section>
+
+  <!-- Premium Section -->
+  <section id="premium" class="info-section">
+    <h2>Premium</h2>
+    <p>Coming soon: Exclusive resources, advanced tutorials, and early access to new content for premium members.</p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 MCDev Hub. All rights reserved.</p>
+  </footer>
 </body>
 </html>
