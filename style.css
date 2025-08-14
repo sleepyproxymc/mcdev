@@ -1,0 +1,86 @@
+/* Reset & base */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f0f2f5;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background: #1f2937;
+  color: #fff;
+  text-align: center;
+  padding: 25px 20px;
+}
+header h1 {
+  margin-bottom: 15px;
+  font-size: 2em;
+}
+nav {
+  margin-bottom: 15px;
+}
+nav button {
+  margin: 0 5px 5px 0;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  background: #374151;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+nav button.active,
+nav button:hover {
+  background: #3b82f6;
+}
+#search {
+  padding: 10px;
+  width: 90%;
+  max-width: 400px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  margin-bottom: 20px;
+  font-size: 1em;
+}
+
+/* Main content */
+main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 0 20px 40px;
+}
+.fix-item {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.fix-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+.fix-item h2 {
+  font-size: 1.3em;
+  margin-bottom: 8px;
+  color: #1f2937;
+}
+.fix-item p {
+  color: #555;
+}
+
+/* Responsive adjustments */
+@media (max-width: 500px) {
+  nav button {
+    padding: 6px 10px;
+    font-size: 0.9em;
+  }
+}

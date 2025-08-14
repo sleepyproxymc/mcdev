@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MCDev Help</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>MCDev Help</h1>
+    <nav>
+      <button class="category-btn active" data-category="all">All</button>
+      <button class="category-btn" data-category="fabric">Fabric</button>
+      <button class="category-btn" data-category="forge">Forge</button>
+      <button class="category-btn" data-category="plugins">Plugins</button>
+      <button class="category-btn" data-category="general">General Fixes</button>
+    </nav>
+    <input type="text" id="search" placeholder="Search fixes...">
+  </header>
+  
+  <main id="fixes-list">
+    <div class="fix-item" data-category="fabric">
+      <h2>Fabric Crash Fix</h2>
+      <p>Step-by-step guide to fix Fabric crashes in Minecraft.</p>
+    </div>
+    <div class="fix-item" data-category="forge">
+      <h2>Forge Mod Error</h2>
+      <p>How to troubleshoot common Forge mod errors.</p>
+    </div>
+    <div class="fix-item" data-category="plugins">
+      <h2>Plugin Issue</h2>
+      <p>Resolve conflicts and errors caused by server plugins.</p>
+    </div>
+    <div class="fix-item" data-category="general">
+      <h2>General Minecraft Bug</h2>
+      <p>Fix general bugs without affecting mods or plugins.</p>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
